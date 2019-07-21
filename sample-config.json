@@ -1,0 +1,17 @@
+// This is a sample config and represents the minimum set of fields that you must
+// configure. Pass it in a flag --config config.json or rename to .github2rangerc
+// and place it in your home directory.
+
+{
+  // Get a personal API token from https://github.com/settings/tokens
+  "githubAccessToken": "...",
+
+  // Create a webhook at https://range.co/_/settings/integrations
+  "rangeWebhook": "https://in.range.co/services/incoming/.../...",
+
+  // Provide a mapping of GitHub usernames to the email address used with your
+  // Range account.
+  "users": {
+    "myusername": "me@mycompany.com"
+  }
+}

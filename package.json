@@ -1,0 +1,32 @@
+{
+  "name": "github2range",
+  "description": "Self-hosted GitHub integration for Range.",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "bin": {
+    "github2range": "./lib/index.js"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint **/*.js",
+    "fmt": "./node_modules/.bin/prettier --write **/*.js",
+    "start": "node ./lib/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "prettier": "^1.17.1"
+  },
+  "dependencies": {
+    "@octokit/rest": "^16.28.5",
+    "colors": "^1.3.3",
+    "rc": "^1.2.8"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "consistent"
+  }
+}
