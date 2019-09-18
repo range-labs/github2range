@@ -69,6 +69,25 @@ locations:
 - `/etc/github2rangerc`
 - `/etc/github2range/config`
 
+## Docker
+
+This repository provides a `Dockerfile` which can be used to execute `github2range`. You can
+customize the Dockerfile and copy over a config file to one of the above locations, or you can pass
+configuration options to docker via environment variables. For example:
+
+```bash
+docker build -t github2range .
+docker run \
+  --env github2range_githubAccessToken=XXXXXXXX \
+  --env github2range_rangeWebhook=https://in.range.co/services/incoming/XXXXXXXX \
+  --env github2range_users__catboy=conner@pjmasks.com \
+  --env github2range_users__owlette=amaya@pjmasks.com \
+  --env github2range_users__ghlogin=email@company.com \
+  github2range
+```
+
+A prebuilt is available on Docker hub at [pupius/github2range](https://hub.docker.com/r/pupius/github2range).
+
 ## FAQ
 
 ### How do I get a GitHub access token?
