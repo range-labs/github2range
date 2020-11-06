@@ -1,7 +1,7 @@
 {
   "name": "github2range",
   "description": "Self-hosted GitHub integration for Range.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
